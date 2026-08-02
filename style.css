@@ -1,0 +1,178 @@
+body {
+    text-align: center;
+    background-color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    margin-top: 20px;
+}
+
+h1 {
+    margin-top: 10px;
+}
+
+p {
+    margin-top: 20px;
+}
+
+nav {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.address {
+    display: inline-block;
+    text-align: left;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product {
+    width: 30%;
+}
+
+.about-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.about-left {
+    width: 50%;
+    text-align: left;
+    padding-right: 50px;
+}
+
+.about-right {
+    width: 50%;
+    text-align: left;
+}
+
+.about-left p {
+    width: 70%;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.team {
+    border: 1px solid black;
+    padding: 15px;
+    background-color: rgba(255,255,255,0.15);
+    width: 95%;
+    margin: 0 auto;
+}
+
+.member {
+    width: 250px;
+    background-color: #f5a300;
+    padding: 20px;
+    margin: 20px auto;
+    border: 2px solid white;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.member {
+    min-height: 130px;
+}
+
+.position {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.photo {
+    width: 90px;
+    height: 110px;
+    background-color: lightgray;
+    border: 2px solid white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    flex: 1;
+    text-align: center;
+}
+
+.info p {
+    font-size: 14px;
+}
+
+.position {
+    margin-bottom: 20px;
+}
+
+.team-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.third-row {
+    margin-top: 60px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.tagline {
+    font-style: italic;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+
+    padding: 15px 30px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 30px;
+}
+
+.header-text {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-text h2 {
+    margin: 0 0 5px 0;
+}
+
+.tagline {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-style: italic;
+}
