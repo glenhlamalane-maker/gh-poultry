@@ -338,6 +338,7 @@ footer iframe{
     position: absolute;
     right: 20px;
     top: 20px;
+    z-index: 1001;
 }
 
     .header img{
@@ -374,18 +375,27 @@ footer iframe{
     }
 
 #mobileMenu{
-    display: none;
+    display: flex;
     flex-direction: column;
-    width: 60%;
-    margin: 15px auto;
+
+    position: fixed;
+    top: 0;
+    right: -250px;
+
+    width: 110px;
+    height: 100vh;
+
+    background: rgba(245, 222, 179, 0.25);
+
+    backdrop-filter: blur(15px);
+
+    padding-top: 60px;
+
+    box-shadow: -3px 0 8px rgba(0,0,0,0.12);
+
     text-align: center;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    background: white;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    transition: right 0.3s ease;
+    z-index: 1000;
 }
 
 #mobileMenu a{
@@ -403,10 +413,11 @@ footer iframe{
     }
 
 #mobileMenu a:hover{
-    background-color: #d97706;
-    color: white;
+    background: rgba(217,119,6,0.1);
+    color: #d97706;
     border-radius: 5px;
 }
+
 .tagline{
     font-size: 14px;
 }
