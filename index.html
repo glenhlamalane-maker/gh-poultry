@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
+
 </head>
+
+
 
 <body>
 
@@ -13,19 +18,23 @@
 
     <div class="header-text">
 
-        <h2>GH POULTRY (PTY) LTD </h2>
+        <h2>GH POULTRY </h2>
         <p class="tagline">Fresh • Quality • Reliable </p>
 
     </div>
 
 
-       <nav>
-    <a href="index.html">Home</a> 
-    <a href="products.html">Products</a> 
-    <a href="about.html">About Us</a> 
-    <a href="team.html">Our Team</a> 
-    <a href="contacts.html">Contacts</a> 
-    </nav>
+<button class="menu-toggle" onclick="toggleMenu()">
+    ☰
+</button>
+
+<nav id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About Us</a>
+    <a href="team.html">Our Team</a>
+    <a href="contacts.html">Contacts</a>
+</nav>
     </div>
 
  </div>
@@ -115,6 +124,21 @@
     <p>&copy; 2026 GH Poultry (Pty) Ltd. All Rights Reserved.</p>
 
 </footer>
+
+<script>
+function toggleMenu() {
+    var menu = document.getElementById("mobileMenu");
+    var button = document.querySelector(".menu-toggle");
+
+    if (menu.style.display === "flex") {
+        menu.style.display = "none";
+        button.innerHTML = "☰";
+    } else {
+        menu.style.display = "flex";
+        button.innerHTML = "×";
+    }
+}
+</script>
 
 </Body>
 
