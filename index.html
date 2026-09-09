@@ -18,7 +18,7 @@
 
     <div class="header-text">
 
-        <h2>GH POULTRY </h2>
+        <h2>GH POULTRY</h2>
         <p class="tagline">Fresh • Quality • Reliable </p>
 
     </div>
@@ -125,21 +125,21 @@
 
 </footer>
 
+
 <script>
 function toggleMenu() {
     var menu = document.getElementById("mobileMenu");
     var button = document.querySelector(".menu-toggle");
 
-    if (menu.style.display === "flex") {
-        menu.style.display = "none";
+    if (menu.style.right === "0px") {
+        menu.style.right = "-250px";
         button.innerHTML = "☰";
     } else {
-        menu.style.display = "flex";
+        menu.style.right = "0px";
         button.innerHTML = "×";
     }
 }
 </script>
-
 </Body>
 
 </html>
