@@ -331,6 +331,10 @@ footer iframe{
     display: flex;
 }
 
+.home-button{
+    display: none;
+}
+
 @media screen and (max-width: 768px){
 
   .menu-toggle{
@@ -435,6 +439,94 @@ footer iframe{
 
 .btn{
     width: fit-content;
+}
+
+.home-button{
+    display: inline-block !important;
+    background: #d97706 !important;
+    color: white !important;
+    text-decoration: none;
+
+    position: absolute;
+right: 20px;
+top: 17px;
+
+
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 8px;
+
+    font-weight: bold;
+    
+}
+
+.home-button:hover{
+    background: #b45309;
+}
+
+nav{
+    display: none;
+}
+
+.products{
+    flex-direction: column;
+    align-items: center;
+}
+
+.product{
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+input,
+textarea{
+    width: 90%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"]{
+    background: #d97706;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.about-page{
+    flex-direction: column;
+}
+
+.about-left,
+.about-right{
+    width: 100%;
+    padding-right: 0;
+}
+
+.about-left p{
+    width: 100%;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.member{
+    flex-direction: column;
+    text-align: center;
+}
+
+.photo {
+    width: 80px;
+    height: 100px;
+    background-color: lightgray;
+    border: 2px solid white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 }
