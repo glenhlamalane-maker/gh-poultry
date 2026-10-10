@@ -61,8 +61,8 @@ nav {
 }
 
 .about-left p {
-    width: 70%;
-    text-align: justify;
+    width: 100%;
+    text-align: left;
     line-height: 1.8;
 }
 
@@ -337,6 +337,94 @@ footer iframe{
 
 @media screen and (max-width: 768px){
 
+.story-image,
+.facility-section,
+.flock-section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.story-section {
+    margin: 10px 0;
+    gap: 10px;
+}
+
+.about-left h2 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.about-left h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.about-left p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+    .about-left p,
+.story-text p {
+    font-size: 17px;
+    line-height: 2;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+}
+
+.about-page {
+    max-width: 100%;
+}
+
+.about-left p {
+    font-size: 18px;
+    line-height: 2;
+}
+
+.about-left h2,
+.about-left h3,
+.about-left p {
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+}
+
+
+.about-left h2,
+.about-left h3 {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 12px;
+    box-sizing: border-box;
+}
+
+.about-page {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.about-left {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about-left p {
+    width: 100%;
+    max-width: 700px;
+    margin: 15px auto;
+    padding: 0 12px;
+    text-align: left;
+    line-height: 2.0;
+    box-sizing: border-box;
+}
+
+
+
   .menu-toggle{
     display: block;
     position: absolute;
@@ -509,20 +597,12 @@ button[type="submit"]{
     text-align: left;
 }
 
-.about-page{
-    flex-direction: column;
-}
 
 .about-left,
-.about-right{
+.about-right {
     width: 100%;
-    padding-right: 0;
-}
-
-.about-left p{
-    width: 100%;
-    text-align: left;
-    line-height: 1.8;
+    max-width: 100%;
+    padding: 0;
 }
 
 .member{
@@ -546,9 +626,10 @@ button[type="submit"]{
 .story-section {
     display: flex;
     align-items: center;
-    gap: 40px;
-    margin: 50px 0;
+    gap: 10px;
+    margin: 10px 0;
 }
+
 
 .story-image {
     flex: 1;
@@ -685,3 +766,44 @@ button[type="submit"]{
 }
 
 
+.story-text {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+
+    .about-left p,
+    .story-text p {
+        text-align: justify !important;
+        text-justify: inter-word;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .about-left p,
+    .story-text p {
+        text-align: justify !important;
+        text-justify: inter-word;
+        hyphens: auto;
+        font-size: 12px;
+        line-height: 2;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+}
+
+h1 {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 17px;
+}
+
+h3 {
+    font-size: 16px;
+}
