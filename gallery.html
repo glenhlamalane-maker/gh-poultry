@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - GH Poultry</title>
+    <link rel="stylesheet" href="style.css">
+
+
+
+<style>
+.slide {
+    display: none !important;
+}
+
+.slide.active {
+    display: block !important;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    background: grey;
+}
+
+.active-dot {
+    background: black;
+}
+</style>
+
+
+
+
+
+</head>
+
+<body>
+
+    <div class="header">
+
+       <img src="images/logo.png" width="200" height="auto">
+
+        <div class="header-text">
+            <h2>GH POULTRY</h2>
+            <p class="tagline">Fresh • Quality • Reliable</p>
+        </div>
+
+        <a href="index.html" class="home-button">Home</a>
+
+    </div>
+
+    <hr>
+
+    
+<div class="gallery-book">
+
+    <div class="slide active">
+        <img src="images/facility.webp"
+         class="gallery-photo"
+         alt="Favility">
+
+        </div>
+
+    <div class="slide">
+        <img src="images/First_Fock.jpg"
+             class="gallery-photo"
+             alt="First Flock">
+    </div>
+
+    <div class="slide">
+        <img src="images/pic 1.jpeg"
+        class="gallery-photo"
+        alt="2 weeks chicks">
+
+    </div>
+
+      <div class="slide">
+        <img src="images/pic 5.jpeg"
+        class="gallery-photo"
+        alt="2 weeks chicks">
+
+    </div>
+
+     <div class="slide">
+        <img src="images/pic 4.jpeg"
+        class="gallery-photo"
+        alt="2 weeks chicks">
+
+    </div>
+
+ </div>
+
+<div class="dots">
+    <span class="dot active-dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+ <script>
+
+let currentSlide = 0;
+
+const slides = document.querySelectorAll(".slide");
+const dots = document.querySelectorAll(".dot");
+
+function showSlide(index) {
+
+    slides.forEach(slide => {
+        slide.classList.remove("active");
+    });
+
+    dots.forEach(dot => {
+        dot.classList.remove("active-dot");
+    });
+
+    slides[index].classList.add("active");
+    dots[index].classList.add("active-dot");
+}
+
+setInterval(() => {
+
+    currentSlide++;
+
+    if (currentSlide >= slides.length) {
+        currentSlide = 0;
+    }
+
+    showSlide(currentSlide);
+
+}, 5000);
+
+</script>
+
+</body>
+
+</html>
